@@ -1,6 +1,7 @@
-/settings
+/settings/settings_live.py
 /.idea
 /venv
-core/__pycache__
-cms/__pychace__
-.mypy_cache
+core/__pycache__/
+cms/__pycache__/
+.mypy_cache/
+settings/__pycache__/

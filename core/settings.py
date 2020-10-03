@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -18,14 +17,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
-try:
+ENV = 'local'
+if ENV == 'local':
     from settings.settings_local import SECRET_KEY, DEBUG, ALLOWED_HOSTS, DATABASES
-except ImportError:
-    SECRET_KEY = 'test',
-    DEBUG = False,
-    ALLOWED_HOSTS = [],
-    DATABASES = {}
-
+else:
+    from settings.settings_live import SECRET_KEY
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = SECRET_KEY
 
