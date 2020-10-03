@@ -1,6 +1,6 @@
 /settings
 /.idea
 /venv
-core/__pycache__/
-cms/__pychace__/
+core/__pycache__
+cms/__pychace__
 .mypy_cache
