@@ -2,5 +2,7 @@ from .base import CMSView
 
 
 class Login(CMSView):
+
+    @staticmethod
     def execute(self):
-        raise NotImplemented
+        return {'hey': 'var'}
