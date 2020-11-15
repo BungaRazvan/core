@@ -2,6 +2,9 @@
 /.idea
 /venv
 core/__pycache__/
-cms/__pycache__/
+apps/__pycache__/
+apps/cms/__pycache__/
+apps/jobs/__pycache__/
+apps/jobs/scrappers/__pycache__/
 .mypy_cache/
 settings/__pycache__/
