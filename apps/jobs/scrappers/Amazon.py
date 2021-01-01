@@ -10,16 +10,11 @@ class AmazonScrapper(ScrapperBase):
     def scrape_page(self):
         """Scrape a page."""
 
-        product_title = self.driver.find_element_by_id('productTitle')
-        availability = self.driver.find_element_by_id('availability')
-        price = self.driver.find_element_by_id('priceblock_ourprice')
+        product_title = self.driver.find_element_by_id("productTitle")
+        availability = self.driver.find_element_by_id("availability")
+        price = self.driver.find_element_by_id("priceblock_ourprice")
 
         print(price, product_title, availability)
 
 
-AmazonScrapper(browser='chrome').scrape_pages([AmazonScrapper.urls])
-
-
-
-
-
+AmazonScrapper(browser="chrome").scrape_pages([AmazonScrapper.urls])

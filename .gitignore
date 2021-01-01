@@ -8,3 +8,5 @@ apps/jobs/__pycache__/
 apps/jobs/scrappers/__pycache__/
 .mypy_cache/
 settings/__pycache__/
+.ipynb_checkpoints
+/apps/jobs/fpl/.ipynb_checkpoints/
