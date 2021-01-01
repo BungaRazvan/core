@@ -13,3 +13,5 @@ sqlparse==0.3.1
 typed-ast==1.4.1
 typing-extensions==3.7.4.3
 urllib3==1.26.2
+requests==2.25.1
+pandas==1.2.0
